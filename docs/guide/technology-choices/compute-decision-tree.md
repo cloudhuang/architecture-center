@@ -78,7 +78,7 @@ Notes
 4. <span id="note4">Can scale down to zero after job completes.</span>
 5. <span id="note5">Requires App Service Environment (ASE).</span>
 6. <span id="note6">Use [Azure App Service Hybrid Connections][app-service-hybrid].</span>
-7. <span id="note7">Requires App Service plan.</span>
+7. <span id="note7">Requires App Service plan or [Azure Functions Premium plan][func-premium].</span>
 
 ## DevOps
 
@@ -115,6 +115,19 @@ Notes
 | Multi region failover | Traffic manager | Traffic manager | Traffic manager, Multi-Region Cluster | [Azure Front Door](/azure/azure-functions/functions-geo-disaster-recovery) | Traffic manager | Not supported | Not Supported |
 
 For guided learning on Service Guarantees, review [Core Cloud Services - Azure architecture and service guarantees](/learn/modules/explore-azure-infrastructure).
+
+## Security
+
+Review and understand the available security controls and visibility for each service
+
+- [App Service](/azure/app-service/overview-security)
+- [Azure Kubernetes Service](/azure/aks/security-baseline)
+- [Batch](/azure/batch/security-baseline)
+- [Container Instances](/azure/container-instances/security-baseline)
+- [Functions](/azure/azure-functions/security-baseline)
+- [Service Fabric](/azure/service-fabric/security-baseline)
+- [Virtual machine - Windows](/azure/virtual-machines/windows/security-baseline)
+- [Virtual machine - LINUX](/azure/virtual-machines/linux/security-baseline)
 
 ## Other criteria
 
@@ -165,3 +178,4 @@ Perform a more detailed evaluation looking at the following aspects of the servi
 [big-compute]: ../architecture-styles/big-compute.md
 
 [app-service-hybrid]: /azure/app-service/app-service-hybrid-connections
+[func-premium]: /azure/azure-functions/functions-premium-plan#private-network-connectivity
